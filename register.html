@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Work With us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #0e2f44 !important;
+    }
+
+
+
+    .form_container {
+      margin-top: 20px;
+    }
+
+    #form-title {
+      color: #fff;
+
+    }
+
+    .login_btn {
+      width: 100%;
+      background: #0e2f44 !important;
+      color: white !important;
+    }
+
+    .login_btn:focus {
+      box-shadow: none !important;
+      outline: 0px !important;
+    }
+
+    .login_container {
+      padding: 0 2rem;
+    }
+
+    .input-group-text {
+      background: #0e2f44 !important;
+      color: white !important;
+      border: 0 !important;
+      border-radius: 0.25rem 0 0 0.25rem !important;
+    }
+
+    .input_user,
+    .input_pass:focus {
+      box-shadow: none !important;
+      outline: 0px !important;
+    }
+
+    .user_card {
+      width: 650px;
+      margin-top: auto;
+      margin-bottom: auto;
+      background: #4fcaff;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 5px;
+
+    }
+
+    #messages {
+      background-color: grey;
+      color: #fff;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+      <div class="user_card">
+        <div class="d-flex justify-content-center">
+
+
+          <h3 id="form-title">Registration Form</h3>
+        </div>
+
+        <div class="d-flex justify-content-center form_container">
+          <form method="POST" action="">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">First Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter Your First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Last Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter Your Last Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Enter Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group"> <label class="control-label enq_label" for="appointmentfor">State</label>
+                  <select name="state" id="state" class="form-control" required="">
+                    <option value="" selected="selected">Select</option>
+                    <option value="68">Andhra Pradesh</option>
+                    <option value="710">Assam</option>
+                    <option value="266">Bihar</option>
+                    <option value="27">Chhattisgarh</option>
+                    <option value="623">Goa</option>
+                    <option value="35">Gujarat</option>
+                    <option value="447">Haryana</option>
+                    <option value="665">Himachal Pradesh</option>
+                    <option value="6">Jammu and Kashmir</option>
+                    <option value="58">Jharkhand</option>
+                    <option value="704">Karnataka</option>
+                    <option value="50">Kerala</option>
+                    <option value="705">Maharashtra</option>
+                    <option value="342">Manipur</option>
+                    <option value="870">Meghalaya</option>
+                    <option value="700">Mizoram</option>
+                    <option value="129">Nagaland</option>
+                    <option value="464">Odisha</option>
+                    <option value="26">Punjab</option>
+                    <option value="541">Rajasthan</option>
+                    <option value="381">Sikkim</option>
+                    <option value="267">Tamil Nadu</option>
+                    <option value="668">Tripura</option>
+                    <option value="432">Telangana</option>
+                    <option value="69">Uttar Pradesh</option>
+                    <option value="885">Uttarakhand</option>
+                    <option value="148">West Bengal</option>
+
+                  </select> </div>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="Age">Age</label>
+                <input type="number" class="form-control" id="Age">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" class="form-control" required="">
+                  <option value="" selected="selected">Select</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="number">Phone Number</label>
+                <input type="number" class="form-control" id="number">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="marital_status">Marital Status</label>
+                <select name="marital_status" id="marital_status" class="form-control" required="">
+                  <option value="" selected="selected">Select</option>
+                  <option value="1">Married</option>
+                  <option value="2">Single</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="language">Language</label>
+                <input type="text" class="form-control" id="language">
+              </div>
+            
+
+              <div class="form-group col-md-4">
+                <label for="gender">Skills</label>
+                <select name="gender" id="gender" class="form-control" required="">
+                  <option value="" selected="selected">Select</option>
+                  <option value="1">BabySitter</option>
+                  <option value="2">Cook</option>
+                  <option value="3">Elderly Care</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="religion">Any More Skills?</label>
+                <input type="text" class="form-control" id="religion" >
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <div class="form-group col-md-4">
+                    <label class="control-label enq_label" for="appointmentfor">PAN Card: </label>
+                    <input type="file" name="pan_card" data-parsley-trigger="change"
+                      data-parsley-filemimetypes="image/jpeg, image/png"
+                      data-parsley-required-message="Pan No is required" value="" onchange="passfilename_panno()"
+                      id="pan_card">
+                    <input type="hidden" name="pan_cardname" id="pan_cardname" value="">
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="control-label enq_label" for="appointmentfor">Aadhar Card: </label>
+                  <input type="file" name="Aadhar_card" data-parsley-trigger="change"
+                    data-parsley-filemimetypes="image/jpeg, image/png"
+                    data-parsley-required-message="Aadhar_card No is required" value="" onchange="passfilename_panno()"
+                    id="Aadhar_card">
+                  <input type="hidden" name="Aadhar_cardname" id="Aadhar_cardname" value="">
+                </div>
+
+                <div class="form-group col-md-4 mx-2">
+                  <label class="control-label enq_label" for="appointmentfor">Photo: </label>
+                  <input type="file" name="Photo" data-parsley-trigger="change"
+                    data-parsley-filemimetypes="image/jpeg, image/png"
+                    data-parsley-required-message="Photo No is required" value="" onchange="passfilename_panno()"
+                    id="Photo">
+                  <input type="hidden" name="Photo" id="Photo" value="">
+                </div>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Agree With Our Terms and Condition
+                </label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 login_container">
+              <input class="btn login_btn" type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
