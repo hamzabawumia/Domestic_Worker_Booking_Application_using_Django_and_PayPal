@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% block title %}Elderly Care
+{% endblock title %}
+{% block body %}
+
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background-color: #DCDCDC;
+        }
+
+        section {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .container {
+            max-width: 120rem;
+            padding: 0 1.5rem;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: flex;
+            background-color: #fff;
+            box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.5);
+
+        }
+
+        .content-img {
+            flex: 1;
+        }
+
+        .content-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-text {
+            flex: 1.5;
+            padding: 4rem;
+        }
+
+        .content-text .content-title {
+            font-family: 'Playfair Display', serif;
+            color: #222;
+            font-size: 4rem;
+        }
+
+        .content-point {
+            font-family: 'Playfair Display', serif;
+            color: #222;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .content-text .content-subtitle {
+            font-size: 2.56rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #444;
+            margin: .5rem 0 2rem;
+        }
+
+
+        .content-text .content-paragraph {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-text .btn {
+            display: block;
+            width: 22rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: 1.5rem 2rem;
+            border: 1px solid #444;
+            color: #444;
+        }
+
+        .btn:hover {
+            background: black;
+            color: white;
+        }
+
+        @media screen and (max-width: 1100px) {
+            img {
+                max-width: 90%;
+                max-height: 90%;
+
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            .content-text .content-paragraph {
+                font-size: 1.4rem;
+                margin-bottom: 1.6rem;
+
+            }
+
+
+            .content-text .btn {
+                padding: 1rem 1.56rem;
+            }
+        }
+
+        @media screen and (max-width: 756px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-text .content-paragraph {
+                text-align: justify;
+            }
+
+            .content-img {
+                padding-top: 500px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 456px) {
+            img {
+                padding-top: 500px;
+            }
+
+            .content-text {
+                margin-top: -100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="content-img">
+                    <img
+                        src="https://previews.123rf.com/images/iconicbestiary/iconicbestiary1603/iconicbestiary160300203/54217160-young-man-with-badge-helping-an-old-lady-elder-people-care-and-nursing-flat-style-vector-illustratio.jpg">
+                </div>
+                <div class="content-text">
+                    <h2 class="content-title">We Provide Best</h2>
+                    <h4 class="content-subtitle">Elder Care Services</h4>
+                    <p class="content-paragraph">Elder Care Services involve a variety of services – medical as well as
+                        day by day base tasks that make sure comfort and ease in the lives of your elders. Maid In
+                        Mumbai provides best medical persons at your home address for the purpose of services, including
+                        therapy services, assistive technologies, and equipment, case management, meal and nutrition
+                        help, comprehensive elderly help. Call us now if you are searching for a nearby elder care
+                        service provider in Mumbai.</p>
+                    <h4 class="content-subtitle">Services That We Include</h4>
+                    <h4 class="content-point">In-House Medical Services</h4>
+                    <p class="content-paragraph">We provide a diversity of health services is now available in the
+                        comfort of your house. And you do not have to go out anywhere to get them arranged – just call
+                        us and we will take it from there</h4>
+                    <h4 class="content-point">Nutrition</h4>
+                    <p class="content-paragraph">We take whole responsibility for your elder’s nutritional requirements
+                        by ensuring the timely intake of medicines and meals.</h4>
+                    <h4 class="content-point">Healthcare Monitoring Packages</h4>
+                    <p class="content-paragraph">Our h4Experts are regularly monitoring your health in the shape of
+                        different packages, that include a diversity of services and disease that we offer to cover.
+                        Should you need a wide variety of home-based elder care services; Maid in Mumbai is there for
+                        you. Call us now if you are looking for elder care service nearby in Mumbai.</h4>
+                        <br><br>
+                        <a id="back_btn" href="/ref" class="btn">Book a CareTaker Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+{% endblock body %}

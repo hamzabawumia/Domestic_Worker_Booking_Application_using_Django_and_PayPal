@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block title %}Cook
+{% endblock title %}\
+{% block body %}
+
+
+<head>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background-color: #DCDCDC;
+        }
+
+        section {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem;
+        }
+
+        .container {
+            max-width: 120rem;
+            padding: 0 1.5rem;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: flex;
+            background-color: #fff;
+            box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.5);
+        }
+
+        .content-img {
+            flex: 1;
+        }
+
+        .content-img img {
+            margin: 35% 5%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .content-text {
+            flex: 1.5;
+            padding: 4rem;
+        }
+
+        .content-text .content-title {
+            font-family: 'Playfair Display', serif;
+            color: #222;
+            font-size: 4rem;
+        }
+
+        .content-text .content-subtitle {
+            font-size: 2.56rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #444;
+            margin: .5rem 0 2rem;
+        }
+
+        .content-text .content-paragraph {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-text .btn {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: 1.5rem 2rem;
+            border: 1px solid #444;
+            color: #444;
+        }
+
+        .btn:hover {
+            background: black;
+            color: white;
+        }
+
+        @media screen and (max-width: 1100px) {
+            img {
+                max-width: 90%;
+                max-height: 90%;
+
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            .content-text .content-paragraph {
+                font-size: 1.4rem;
+                margin-bottom: 1.6rem;
+
+            }
+
+
+            .content-text .btn {
+                padding: 1rem 1.56rem;
+            }
+        }
+
+        @media screen and (max-width: 756px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-text .content-paragraph {
+                text-align: justify;
+            }
+
+            .content-img {
+                padding-top: 500px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 456px) {
+            img {
+                padding-top: 500px;
+            }
+
+            .content-text {
+                margin-top: -100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="content-img">
+                    <img src="http://maidinmumbai.com/1.jpg">
+                </div>
+                <div class="content-text">
+                    <h2 class="content-title">We Provide Best</h2>
+                    <h4 class="content-subtitle">Why Cooking Service Are Needed:</h4>
+                    <p class="content-paragraph">There are a lot of people who are often habitual to their traditional
+                        food and not every cook or a maid can cook the food they want. On the other side, a lot of
+                        people are used to different types of food but do not have the time to self cook being working
+                        professionals in metro cities like Mumbai. If you and your spouse want to timely breakfast early
+                        in the morning before leaving for work you have no other option than having a good cook or a
+                        maid who can cook. Several professional have irregular schedules where there are no regular meal
+                        timings. Home cooking services proves extremely helpful since you can get fresh meals anytime
+                        during the day or night whenever you arrive home or are going out. With Maid in Mumbai, you can
+                        choose a cook for vegetarian and non-vegetarian cooking based on your preferences.</p>
+
+                    <a id="back_btn" href="/ref" class="btn">Book a Cook Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+{% endblock body %}

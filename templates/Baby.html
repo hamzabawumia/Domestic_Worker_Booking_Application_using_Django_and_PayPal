@@ -1,0 +1,117 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+	<div class="row">
+	{% for sitters in allsitter%}
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{{sitters.photoURL}}">
+			<div class="box-element product">
+				<h6><strong>{{sitters.fname}}-{{sitters.desc}}</strong></h6>
+				<hr>
+
+				<button data-product={{services.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Book Now</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right">
+				<strong>RS {{sitters.rate}}</strong></h4>
+
+			</div>			
+		</div>
+		{% endfor %}
+		<button style="text-align:center;"><a class="blue_bt" href="/store" >Buy Some Accesories To for Your Baby -></a></button>
+
+	</div>	
+{% endblock content %}
+
+
+
+
+
+
+
+
+{% comment %} {% extends 'main.html' %}
+{% load static %}
+{% block content %}
+	<div class="row">
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/Babysitter1.jpg' %}">
+			<div class="box-element product">
+				<h6><strong>Amanda-BabySitter</strong></h6>
+				<hr>
+
+				<button data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right"><strong>Rs 200</strong></h4>
+
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/Babysitter2.jpg' %}">
+			<div class="box-element product">
+				<h6><strong>Olivia-BabySitter</strong></h6>
+				<hr>
+				
+				<button data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right"><strong>Rs 200</strong></h4>
+				
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/Cook1.jpg' %}">
+			<div class="box-element product">
+				<h6><strong>Emma-Cook</strong></h6>
+				<hr>
+				
+				<button  data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right"><strong>Rs 200</strong></h4>
+				
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/Cook2.jpg' %}">
+			<div class="box-element product">
+				<h6><strong>Harvey-Cook</strong></h6>
+				<hr>
+				
+				<button  data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right"><strong>Rs 200</strong></h4>
+				
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/EC1.jpg' %}">
+			<div class="box-element product">
+				<h6><strong>Sophia-Elderly Caretaker</strong></h6>
+				<hr>
+				
+				<button  data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right"><strong>Rs 200</strong></h4>
+				
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/Babysitter6.png' %}">
+			<div class="box-element product">
+				<h6><strong>Donald-BabySitter</strong></h6>
+				<hr>
+
+				<button data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right"><strong>Rs 200</strong></h4>
+
+			</div>
+			<button style="text-align:center;"><a class="blue_bt" href="/store" >Buy Some Accesories To for Your Baby -></a></button>
+
+		</div>
+	</div>
+
+{% endblock content %} {% endcomment %}
